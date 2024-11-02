@@ -23,6 +23,7 @@
           font-family: Quicksand, sans-serif;
           font-size: 12px;
           font-weight: bold;
+          outline: none;
         "
       />
     </div>

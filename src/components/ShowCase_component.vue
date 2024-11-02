@@ -20,6 +20,7 @@
               font-family: Lato, sans-serif;
               font-size: 12px;
               margin-left: 10%;
+              outline: none;
             "
           />
         </div>
