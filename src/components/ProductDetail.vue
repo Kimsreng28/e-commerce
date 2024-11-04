@@ -319,11 +319,15 @@ export default {
   font-weight: 700;
   font-family: Quicksand, sans-serif;
   cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #07c5eb;
 }
 
 .add-cart button:hover {
-  transform: scale(1.05);
-  filter: opacity(80%);
+  box-shadow: inset 0 100px 0 0 #07c5eb;
 }
 
 .apparent {

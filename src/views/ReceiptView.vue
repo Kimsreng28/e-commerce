@@ -1,8 +1,25 @@
 <template>
   <div class="receipt">
     <div class="container">
-      <h2 style="font-size: 24px; margin-top: 5%">Receipt</h2>
-      <table style="width: 80%; border-collapse: collapse; margin-top: 5%">
+      <h2
+        style="
+          font-size: 26px;
+          margin-top: 5%;
+          font-family: Quicksand, sans-serif;
+          font-weight: bold;
+        "
+      >
+        Receipt
+      </h2>
+      <table
+        style="
+          width: 80%;
+          border-collapse: collapse;
+          margin-top: 5%;
+          font-size: 18px;
+          font-family: Quicksand, sans-serif;
+        "
+      >
         <thead>
           <tr>
             <th style="text-align: left; border-bottom: 1px solid black">
@@ -36,26 +53,76 @@
       </table>
       <div class="summary">
         <div class="subtotal">
-          <p style="font-weight: bold">Subtotal:</p>
-          <span style="font-weight: 700">{{ totalAmount.toFixed(2) }}$</span>
+          <p
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
+          >
+            Subtotal:
+          </p>
+          <span
+            style="
+              font-weight: 700;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
+            >{{ totalAmount.toFixed(2) }}$</span
+          >
         </div>
         <div class="shipping">
-          <p style="font-weight: bold">Shipping:</p>
-          <span style="font-weight: 700">{{ shipping }}$</span>
+          <p
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
+          >
+            Shipping:
+          </p>
+          <span
+            style="
+              font-weight: 700;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
+            >{{ shipping }}$</span
+          >
         </div>
         <div class="total">
-          <p style="font-weight: bold">Total (tax incl.):</p>
-          <span style="font-weight: 700"
+          <p
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
+          >
+            Total (tax incl.):
+          </p>
+          <span
+            style="
+              font-weight: 700;
+              font-size: 18px;
+              font-family: Quicksand, sans-serif;
+            "
             >{{ (totalAmount + shipping).toFixed(2) }}$</span
           >
         </div>
         <div class="print">
           <button
             class="print-button"
-            style="cursor: pointer; font-family: Quicksand, sans-serif"
+            style="
+              cursor: pointer;
+              font-family: Quicksand, sans-serif;
+              font-size: 18px;
+            "
             @click="print"
           >
             Print
+          </button>
+          <button class="close-button" @click="$router.go(-1)">
+            <span class="material-icons">close</span>
           </button>
         </div>
       </div>
@@ -110,7 +177,7 @@ export default {
 }
 
 .summary {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +195,14 @@ export default {
   margin-top: 10px;
 }
 
+.print {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .print-button {
   margin-top: 20%;
   padding: 10px 20px;
@@ -135,6 +210,23 @@ export default {
   color: #fff;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+.print-button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 20%;
+  width: 30px;
+  height: 30px;
+  background-color: #e90909;
+  color: #fff;
+  border: none;
   cursor: pointer;
 }
 </style>

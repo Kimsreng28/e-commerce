@@ -29,11 +29,14 @@ export default {
   font-family: Quicksand, sans-serif;
   color: #504242;
   cursor: pointer;
-  box-shadow: 0 8px 7px rgba(41, 42, 39, 0.1);
-  transition: background-color 0.3s;
+  display: inline-block;
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #07c5eb;
 }
 
 .load-more button:hover {
-  filter: brightness(80%);
+  box-shadow: inset 0 0px 0 50px #07c5eb;
 }
 </style>

@@ -200,18 +200,21 @@ export default {
   height: 45px;
   background-color: #4ee77c;
   border-radius: 5px;
+
   border: none;
   font-size: 16px;
   font-weight: 700;
   font-family: Quicksand, sans-serif;
   color: #000000;
   cursor: pointer;
-  box-shadow: 0 7px 5px rgba(215, 223, 52, 0.1);
-  transition: background-color 0.3s;
+  display: inline-block;
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #07c5eb;
 }
 
 .add-cart button:hover {
-  transform: scale(1.05);
-  filter: opacity(80%);
+  box-shadow: inset 0 100px 0 0 #07c5eb;
 }
 </style>

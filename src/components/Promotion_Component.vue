@@ -103,15 +103,19 @@ export default {
   font-size: 18px;
   font-weight: 500;
   border: none;
+  display: inline-block;
   border-radius: 10px;
+  background-color: rgb(213, 224, 221);
+  color: #524b4b;
   cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 0 7px 5px rgba(214, 203, 203, 0.1);
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #0dc767;
 }
 
 .button button:hover {
-  transform: scale(1.05);
-  filter: brightness(80%);
+  box-shadow: inset 0 -100px 0 0 #0dc767;
 }
 
 .image {

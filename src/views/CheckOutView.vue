@@ -604,13 +604,17 @@ export default {
   color: #ffffff;
   font-size: 20px;
   font-family: Quicksand, sans-serif;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #07c5eb;
 }
 
 .submitted button:hover {
-  background-color: #00fd61;
+  box-shadow: inset 0 100px 0 0 #07c5eb;
 }
 
 .print {
@@ -633,7 +637,14 @@ export default {
   font-family: Quicksand, sans-serif;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  transition: background-color 0.3s, ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #07c5eb;
+}
+
+.print-button:hover {
+  box-shadow: inset 400px 0px 0 0 #07c5eb;
 }
 </style>
